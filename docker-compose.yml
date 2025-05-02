@@ -21,3 +21,14 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5003:5000"
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8066:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - container1
+      - container2
+      - container3
