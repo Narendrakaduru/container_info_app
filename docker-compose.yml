@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5000"
+
+  container2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5000"
+
+  container3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5000"
