@@ -44,6 +44,8 @@ This is a simple Node.js application that displays the hostname of the container
 1.Build the Docker image:
   ```bash
   docker build -t container-info-app .
+  ```
 2.Run the container:
   ```bash
   docker run -p 5000:5000 container-info-app
+  ```
